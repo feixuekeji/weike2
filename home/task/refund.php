@@ -5,7 +5,7 @@ $userId=$_SESSION['id'];
 include "../../public/common/config.inc.php";
 $time=time();
 
-$sqlUser="select * from task where UserID = {$userId} and Status = '3' and DeadTime < {$time} order by ID desc";
+$sqlUser="select * from task where UserID = {$userId} and Status != '2' and DeadTime < {$time} order by ID desc";
 $rstUser=mysql_query($sqlUser);
 ?>
 

@@ -119,7 +119,7 @@ $rowUser=mysql_fetch_assoc($rstUser);
 <div class="clear"></div>
 
 <div class="grid_10 alpha" style="margin-top: 6px">
-	<div class="topmsg tac" style="padding: 5px"><span class="red">提示:领取任务后如果不能按时完成，将扣取任务金额的10%作为雇主的补偿</span></div>
+	<div class="topmsg" style="padding: 5px"><span class="red">提示:领取任务后如果不能按时完成，将扣取任务金额的10%作为雇主的补偿</span></div>
 </div>
 
 <div class="grid_14 omega">

@@ -18,7 +18,7 @@ if($total>=$page)
 else
 	$nextpage=$totpage;
 
-$sqlUser="select * from task order by ID limit {$off},{$length}";
+$sqlUser="select * from task order by ID desc limit {$off},{$length}";
 $rstUser=mysql_query($sqlUser);
 ?>     
 

@@ -17,7 +17,7 @@ if($total>=$page)
 else
 	$nextpage=$totpage;
 
-$sqlUser="select * from notice order by noticeID limit {$off},{$length}";
+$sqlUser="select * from notice order by noticeID desc limit {$off},{$length}";
 $rstUser=mysql_query($sqlUser);
 ?>
 <!DOCTYPE html>

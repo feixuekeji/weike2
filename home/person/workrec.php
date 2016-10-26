@@ -4,7 +4,7 @@ header('content-type:text/html;charset=utf-8');
 session_start();
 $id=$_SESSION['id'];
 include "../../public/common/config.inc.php";
-$sqlUser="select work.*,task.UserID,task.Name from work,task where task.UserID={$id} and work.TaskID=task.ID order by ID";
+$sqlUser="select work.*,task.UserID,task.Name from work,task where task.UserID={$id} and work.TaskID=task.ID order by ID desc";
 $rstUser=mysql_query($sqlUser);
 ?>
 

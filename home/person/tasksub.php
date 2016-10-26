@@ -21,7 +21,7 @@ if($total>=$page)
 else
 	$nextpage=$totpage;
 
-$sqlUser="select work.TaskID,task.* from work,task where work.UserID={$id} and work.TaskID=task.ID order by ID limit {$off},{$length}";
+$sqlUser="select work.TaskID,task.* from work,task where work.UserID={$id} and work.TaskID=task.ID order by ID desc limit {$off},{$length}";
 $rstUser=mysql_query($sqlUser);
 ?>
 

@@ -18,7 +18,11 @@ if($total>=$page)
 else
 	$nextpage=$totpage;
 
-$sqlUser="select * from user order by ID desc limit {$off},{$length}";
+$key=$_GET['key'];
+if (empty($key)) {
+	$sqlUser="select * from user order by ID desc limit {$off},{$length}";
+}else
+$sqlUser="select * from user where Username like '%$key%' or Email like '%$key%' order by ID desc";
 $rstUser=mysql_query($sqlUser);
 ?>          
 
@@ -46,13 +50,21 @@ body,html{height:100%}
 </head>
 
 <body>
-<!-- 学生管理 -->
+
 <div class="xsd w1020" style="height:100%;">
 	<div class="title-bar">
 		<span class="txt">用户管理</span>
 	</div>
 	<div class="tab-con cjhz rcb xsgl" style="height:90%;">
 		<div class="date">
+			<form action="index.php" method="get">
+		
+			<span class="m-search w220">
+				<input name="key" type="text" class="m_search_input w220" placeholder="用户名或邮箱">
+			</span>
+			
+			<button type="submit" class="btn-search btn-green-h36">查 询</button>
+		</form>
 			<!-- <span class="m-search w220">
 				<input name="" type="text" class="m_search_input w220" placeholder="学号">
 			</span>

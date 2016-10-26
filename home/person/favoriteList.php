@@ -18,7 +18,7 @@ if($total>=$page)
 else
 	$nextpage=$totpage;
 
-$sqlUser="select * from favorite,task where favorite.UserID={$id} and favorite.TaskID = task.ID order by fav_id limit {$off},{$length}";
+$sqlUser="select * from favorite,task where favorite.UserID={$id} and favorite.TaskID = task.ID order by fav_id desc limit {$off},{$length}";
 $rstUser=mysql_query($sqlUser);
 ?>
 

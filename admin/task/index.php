@@ -82,7 +82,7 @@ body,html{height:100%}
 				echo "<li>";
 				echo "<p>";
 				echo "<span class='col-60'>{$rowUser['ID']}</span>";
-				echo "<span class='col-220'><a href='task.php?taskId={$rowUser['ID']}'>{$rowUser['Name']}</a></span>";
+				echo "<span class='col-220'><a href='../../home/task/task.php?taskId={$rowUser['ID']}'>{$rowUser['Name']}</a></span>";
 				echo "<span class='col-50'>{$rowUser['Price']}</span>";
 				echo "<span class='col-4'>".date('Y-m-d H:i',$rowUser['PubTime'])."</span>";
 				echo "<span class='col-4'>".date('Y-m-d H:i',$rowUser['DeadTime'])."</span>";

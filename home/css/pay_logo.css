@@ -1,0 +1,87 @@
+.ui-list-icons li{float:left;width:166px;margin-bottom:8px;margin-right:10px; list-style-type:none}
+
+.long-logo .icon-box,.long-logo .icon-box-commend,.long-logo .icon-box-kj{width:130px;background-color:#fff!important;line-height:30px}
+.long-logo .bank-num{float:right;padding-top:8px}
+
+.long-logo .icon-box .icon,.long-logo .icon-box-commend .icon,.long-logo .icon-box-kj .icon{float:left;width:116px;padding:0}
+
+.long-logo .xbox .ui-list-icons{_margin-left:-10px; *margin-left:-10px;*margin-top:5px;}
+.icon-box{ width:126px;border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color:#eee}
+.icon-box-radio{
+	right: 46px;
+	top: 3px;
+}  
+.icon-box-set{
+	margin-left: 40px;
+}
+.icon-box1{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -324px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box2{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -370px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box3{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -278px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box4{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -235px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF}  
+
+.icon-box5{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -463px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF}  
+
+.icon-box6{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -685px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF}  
+
+.icon-box7{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -186px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF}  
+
+.icon-box8{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -9px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box9{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -509px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box10{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -136px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box11{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -592px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box12{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -52px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box13{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -721px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box14{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -93px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box15{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -548px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box16{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -418px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box17{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -752px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box18{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -785px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box19{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -818px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box20{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -847px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.icon-box21{ BACKGROUND: url(/assets/img/pay/bank_list.gif) no-repeat 6px -884px; width:135px;  HEIGHT: 32px; border:1px solid #ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF} 
+
+.pay_bank_show{
+	display: none;
+}
+.bank_list{overflow: hidden;}
+
+.icon-alipay{
+	background-image: url(/assets/img/pay/alipay.gif);
+	background-repeat: no-repeat; width:135px; HEIGHT: 32px; border:1px solid#ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF
+} 
+
+.icon-box2-CMBBTB,.icon-box3-CCBBTB,.icon-box4-ABCBTB,.icon-box5-BOCBTB,.icon-box7-SPDBB2B{background-image: url(/assets/img/pay/bankB2B_list.gif);background-repeat: no-repeat; width:135px; HEIGHT: 32px; border:1px solid#ddd;vertical-align:middle;position:relative;display:inline-block;background-color: #FFF}
+
+.icon-box2-CMBBTB{
+	background-position: left -184px;
+}
+.icon-box3-CCBBTB{
+	background-position: left -94px;
+}
+.icon-box4-ABCBTB{
+	background-position: left -50px;
+}
+
+.icon-box5-BOCBTB{
+	background-position: left -278px;
+}
+
+.icon-box7-SPDBB2B{
+	background-position: left -2px;
+}

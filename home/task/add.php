@@ -14,6 +14,7 @@ $rsttype=mysql_query($sqltype);
 	<title>任务添加</title>
   <script type="text/javascript" charset="utf-8" src="../../public/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="../../public/ueditor/ueditor.all.min.js"> </script>
+  <script type="text/javascript" charset="utf-8" src="../../public/My97DatePicker/WdatePicker.js"> </script>
     <link rel="stylesheet" href="../public/css/index.css">
 </head>
 <body>
@@ -51,7 +52,7 @@ $rsttype=mysql_query($sqltype);
   <tr>
 	<td>截止时间:</td>
     
-	<td><input name="deadtime" type="date" value='<?php echo date('Y-m-d',$t) ?>'></td>
+	<td><input class="Wdate" name="deadtime" type="text" onfocus="WdatePicker({minDate:'%y-%M-#{%d+1}'})"></td>
   </tr>
   <tr>
 </table>

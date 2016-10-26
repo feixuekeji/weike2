@@ -262,7 +262,7 @@ body,html{height:100%}
 						<span class="col-50">发布人</span>
 						<span class="col-50">任务类型</span>
 						<span class="col-50">任务进度</span>
-						<span class="col-4"> 剩余时间</span>
+						<span class="col-4"> 发布时间</span>
 					</p>
 				</li>
 			</ul>
@@ -291,7 +291,7 @@ body,html{height:100%}
 				break;
 				}
 				if ($rowUser['DeadTime']>time()) {
-					echo "<span class='col-4' style='color: #FF5A00;'>".time2string($rowUser['DeadTime']-time())."</span>";
+					echo "<span class='col-4' style='color: #FF5A00;'>".date('Y-m-d H:i',$rowUser['PubTime'])."</span>";
 					# code...
 				}else
 				echo "<span class='col-4' style='color: #FF5A00;'>已过期</span>";

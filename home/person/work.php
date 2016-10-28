@@ -61,6 +61,7 @@ body,html{height:100%}
 						<span class="col-250">任务名</span>
 						<span class="col-4">交稿时间</span>
 						<span class="col-80">状态</span>
+						<span class="col-250">备注</span>
 						<span class="col-12">操作</span>
 					</p>
 				</li>
@@ -86,6 +87,7 @@ body,html{height:100%}
 				break;
 				
 				}
+				echo "<span class='col-250'><textarea>{$rowUser['Reason']}</textarea></span>";
 				if ($rowUser['Status']==2) {
 				echo "<span class='col-12'><a href='appeal.php?workId={$rowUser['ID']}&taskId={$rowUser['TaskID']}'>申诉</a></span>";
 				}else

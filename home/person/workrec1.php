@@ -116,9 +116,9 @@ body,html{height:100%}
 				break;
 				
 				}
-				//if ($rowUser['Status']==0) {
+				if ($rowUser['Status']==0) {
 				echo "<span class='col-12'><a href='workRecSub.php?status=1&workid={$rowUser['ID']}' onclick='ok({$rowUser['ID']});return false;'> 合格</a> ｜ <a href='workRecSub.php?status=2&workid={$rowUser['ID']}' onclick='edit({$rowUser['ID']});return false;'> 不合格</a></span>";
-				//}else
+				}else
 				echo "<span class='col-12'></span>";
 				echo "</p>";
 				echo "</li>";

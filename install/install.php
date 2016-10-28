@@ -1,4 +1,4 @@
-<?php
+ <?php
 error_reporting(0);
 //屏蔽报错
 header("Content-type:text/html;charset=utf-8"); 
@@ -58,6 +58,7 @@ UserID int not null,
 Descript text not null,
 PubTime int not null,
 Status int not null,
+Reason varchar(200),
 primary key(ID)
 )";
 $sql5="create table if not exists message(

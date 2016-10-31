@@ -55,7 +55,7 @@ body,html{height:100%}
 				echo "<ul class='list'>";
 				echo "<li>";
 				echo "<p>";
-				echo "<span class='col-100'><a href=''workShow.php?workId={$rowUser['ID']}'>查看</a></span>";
+				echo "<span class='col-100'><a href='workShow.php?workId={$rowUser['ID']}'>查看</a></span>";
 				echo "<span class='col-280'>{$rowUser['Name']}</span>";
 				echo "<span class='col-4'>".date('Y-m-d H:i',$rowUser['PubTime'])."</span>";
 				switch($rowUser['Status'])

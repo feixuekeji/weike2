@@ -59,6 +59,7 @@ body,html{height:100%}
 						<span class="col-220">任务名</span>
 						<span class="col-4">稿件</span>
 						<span class="col-4">申诉时间</span>
+						<span class="col-4">申诉理由</span>
 						<span class="col-12">操作</span>
 					</p>
 				</li>
@@ -69,9 +70,10 @@ body,html{height:100%}
 				echo "<li>";
 				echo "<p>";
 				echo "<span class='col-60'>{$rowUser['appeal_id']}</span>";
-				echo "<span class='col-220'><a href='../../home/task/task.php?id={$rowUser['task_id']}' target='_blank'>{$rowUser['Name']}'</a></span>";
-				echo "<span class='col-220'><a href='../work/workshow.php?workId={$rowUser['work_id']}' target='_blank'>查看</a></span>";
+				echo "<span class='col-220'><a href='../../home/task/task.php?id={$rowUser['task_id']}' target='_blank'>{$rowUser['Name']}</a></span>";
+				echo "<span class='col-4'><a href='../work/workshow.php?workId={$rowUser['work_id']}' target='_blank'>查看</a></span>";
 				echo "<span class='col-4'>".date('Y-m-d H:i',$rowUser['appeal_time'])."</span>";
+				echo "<span class='col-4'>{$rowUser['Reason']}</span>";
 				echo "<span class='col-12'><a href='appealSub.php?appealId={$rowUser['appeal_id']}&status=1&bidderId={$rowUser['bidder']}&userId={$rowUser['UserID']}&taskId={$rowUser['ID']}'> 通过</a> ｜ <a href='appealSub.php?appealId={$rowUser['appeal_id']}&status=2&bidderId={$rowUser['bidder']}&userId={$rowUser['UserID']}&taskId={$rowUser['ID']}'>不通过</a></span>";
 				echo "</p>";
 				echo "</li>";

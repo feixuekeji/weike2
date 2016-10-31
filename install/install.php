@@ -116,6 +116,7 @@ task_id int not null,
 work_id int not null,
 appeal_time int not null,
 appeal_status int not null,
+Reason varchar(200),
 primary key(appeal_id)
 )";
 $sql12="create table if not exists refund(

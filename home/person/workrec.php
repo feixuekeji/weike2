@@ -21,9 +21,9 @@ $rstUser=mysql_query($sqlUser);
 <script src="../../js/addclear.js"></script>
 
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+<link rel="stylesheet" href="../../js/jquery-ui/jquery-ui.css">
+<link rel="stylesheet" href="../../js/jquery-ui/demo_style.css">
+  <script src="../../js/jquery-ui/jquery-ui.js"></script>
 <script type="text/javascript">
 $(function() {
     $( "#dialog" ).dialog({

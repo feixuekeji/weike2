@@ -34,11 +34,36 @@ $rstUser=mysql_query($sqlUser);
 <link rel="stylesheet" href="../../css/mCustomScrollbar.css">
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/addclear.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 <script type="text/javascript">
+$(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false});
+  });
 $(document).ready(function(){
 	$(".m_search_input").addClear();
 	$(".m_search_input").focus();
 });
+</script>
+<script type="text/javascript">
+function edit(workid,TaskID){
+	workId=workid;
+	taskID=TaskID;
+	$( "#dialog" ).dialog( "open" );
+};
+
+function subReason(){
+	var msg=$("#msg").val();
+	var url="appeal.php?workId="+workId+"&taskId="+taskID+"&Reason="+msg;
+	$( "#dialog" ).dialog( "close" );
+	$.get(url,function(data){
+		
+			alert(data);
+      
+    });
+};
+
 </script>
 <style>
 body,html{height:100%}
@@ -46,6 +71,11 @@ body,html{height:100%}
 </head>
 
 <body>
+<div id="dialog" title="原因">
+  <textarea id ="msg" rows="3" cols="20">
+</textarea>
+<button onclick="subReason();return false;">确认</button>
+</div>
 <!-- 学生管理 -->
 <div class="xsd w1020" style="height:100%;">
 	<div class="title-bar">
@@ -71,7 +101,7 @@ body,html{height:100%}
 				echo "<ul class='list'>";
 				echo "<li>";
 				echo "<p>";
-				echo "<span class='col-60'><a href='workShow.php?workId={$rowUser['ID']}'>查看</a></span>";
+				echo "<span class='col-60'><a href=''workShow.php?workId={$rowUser['ID']}'>查看</a></span>";
 				echo "<span class='col-250'>{$rowUser['Name']}</span>";
 				echo "<span class='col-4'>".date('Y-m-d H:i',$rowUser['PubTime'])."</span>";
 				switch($rowUser['Status'])
@@ -89,7 +119,7 @@ body,html{height:100%}
 				}
 				echo "<span class='col-250'>{$rowUser['Reason']}</span>";
 				if ($rowUser['Status']==2) {
-				echo "<span class='col-12'><a href='appeal.php?workId={$rowUser['ID']}&taskId={$rowUser['TaskID']}'>申诉</a></span>";
+				echo "<span class='col-12'><a href='appeal.php?workId={$rowUser['ID']}&taskId={$rowUser['TaskID']}' onclick='edit({$rowUser['ID']},{$rowUser['TaskID']});return false;'>申诉</a></span>";
 				}else
 				echo "<span class='col-12'></span>";
 				echo "</p>";

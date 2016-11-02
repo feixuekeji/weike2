@@ -11,7 +11,8 @@ class FindController extends Controller{
     {
         $data = I('post.');
         $find = M('find');
-        //$data['pub_time'] = time();
+        $data['openid'] = session('openid');
+        $data['pub_time'] = time();
         if ($find -> add($data)){
             echo "成功";
         }else 
@@ -34,6 +35,15 @@ class FindController extends Controller{
         
     }
     
+    //详细页
+    public function getDetail()
+    {
+        $find_id = I('get.find_id');
+        $find = M('find');
+        $data = $find->where('find_id=$find_id')->find();
+        $this->assign('data', $data);
+        $this->display();
+    }
 }
 
 ?>

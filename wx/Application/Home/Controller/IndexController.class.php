@@ -8,6 +8,8 @@ use Think\Controller;
  */
 class IndexController extends Controller {
     public function index(){
+        $openid = I('get.openid');
+        session('openid',$openid);
         $this->display();
     }
 }

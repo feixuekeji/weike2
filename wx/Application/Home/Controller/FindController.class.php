@@ -17,7 +17,6 @@ class FindController extends Controller{
             echo "成功";
         }else 
             echo "失败";
-   
     }
     
     public function findList()

@@ -4,15 +4,16 @@ session_start();
 include "../public/common/config.inc.php";
 
 //获取数据列数，实现翻页
+$time = time();
 
 $sqlUser="select * from tasktype order by ID";
 $rstUser=mysql_query($sqlUser);
 
 
-$sqlTask="select * from task order by ID desc limit 1,10";
+$sqlTask="select * from task where DeadTime-{$time}>0 order by ID desc limit 1,10";
 $rstTask=mysql_query($sqlTask);
 
-$sqlTask2="select * from task order by Price desc limit 1,10";
+$sqlTask2="select * from task where DeadTime-{$time}>0 order by Price desc limit 1,10";
 $rstTask2=mysql_query($sqlTask2);
 
 /*$sqlTask3="select * from task order by ID desc limit 21,10";
